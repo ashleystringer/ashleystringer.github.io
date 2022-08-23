@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ base.url }}/assets/styles.css">
+    <title>{{ site.title }}</title>
+</head>
+<body>
+    {% include navbar.html %}
+
+    {{ content }}
+
+    <script src="{{ base.url }}/assets/scrollNav.js"></script>
+</body>
+</html>
