@@ -74,11 +74,12 @@ body{
 .showcase .container{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .showcase .arrow-container{
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    align-content: center;
 }
 
 .box{
@@ -88,6 +89,29 @@ body{
     border-radius: 3px;
     margin: 20px 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-    padding: 15px 20px;
+    padding: 20px 25px; /* 15px 20px*/
+    height: 12rem;
 }
 
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer hr{
+    border: inset;
+    background-color: #0151cc;
+    border-width: 0.9px;
+}
+
+@media(max-width: 768px){
+    .header .container{
+
+    }
+
+    .boxes .container{
+
+    }
+}
