@@ -1,3 +1,13 @@
+:root{
+    --backgroundColor: #a1c3ff;
+    --color: #333;
+    --navbarColor: #3474e6;  
+    --navbarHoverColor: rgb(207, 207, 207);
+    --showcaseColor: #0151cc;
+    --boxColor: #0151cc;
+    --footerColor: #0151cc;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -12,12 +22,8 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #333;
-    background: #a1c3ff;
-}
-
-.header{
-
+    color: var(--color);
+    background: var(--backgroundColor);
 }
 
 .container{
@@ -33,7 +39,7 @@ body{
 }
 
 .navbar{
-    background: #3474e6;
+    background: var(--navbarColor);
     color: #fff;
     height: 60px;
 }
@@ -44,7 +50,7 @@ body{
 }
 
 .navbar a:hover{
-    color: rgb(207, 207, 207);
+    color: var(--navbarHoverColor);
     transition: 0.3s;
 }
 
@@ -67,8 +73,16 @@ body{
     display: flex;
 }
 
+.header{
+    height: 15px;
+    margin: 10px;
+}
+
+.header .container{
+}
+
 .showcase{
-    background-color: #0151cc;
+    background-color: var(--showcaseColor);
 }
 
 .showcase .container{
@@ -84,7 +98,7 @@ body{
 
 .box{
     flex: 1;
-    background: #0a51cc;
+    background: var(--boxColor);
     color: #fff;
     border-radius: 3px;
     margin: 20px 10px;
@@ -102,7 +116,7 @@ footer{
 
 footer hr{
     border: inset;
-    background-color: #0151cc;
+    background-color: var(--footerColor);
     border-width: 0.9px;
 }
 
