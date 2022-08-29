@@ -19,22 +19,15 @@ layout: "site_wrapper"
         and use their images
     -->
     <div class="container"> 
-        <div class="box">
-            <img src="" alt="One Photo">
-            <div></div>
-        </div>
-        <div class="box">
-            <img src="" alt="Two Photo">
-            <div></div>
-        </div>
-        <div class="box">
-            <img src="" alt="Three Photo">
-            <div></div>
-        </div>
-        <div class="box">
-            <img src="" alt="Four Photo">
-            <div></div>
-        </div>
+        {% for project in site.categories['projects'] %}
+            <div class="box">
+                <div>
+                    <a href="{{project.url}}">{{project.title}}</a>
+                </div>
+                <img src="" alt="{{project.title}}">
+                <div></div>
+            </div>
+        {% endfor %}
         </div>
         <div class='arrow-container'> <!-- Center this -->
             <div>

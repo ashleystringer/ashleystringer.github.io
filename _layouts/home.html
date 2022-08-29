@@ -1,5 +1,11 @@
 <script src='{{ base.url }}/assets/scrollNav.js'></script>
 
-{% for file in site.static_files %}
-    {{ file.name }} <br>
+{% for file in site.posts %}
+    {{ file.title }} <br>
+{% endfor %}
+
+<br>
+
+{% for project in site.categories['projects'] %}
+    <div>{{project.title}}</div>
 {% endfor %}
