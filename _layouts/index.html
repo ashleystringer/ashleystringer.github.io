@@ -10,8 +10,8 @@ layout: "site_wrapper"
     </div>
 </header>
 
-<section id='one' class='showcase'>
-    Showcase
+<section id='showcase' class='showcase'>
+    <div class='sect-title'>Showcase</div>
 
     <!-- 
         Tentative idea - 
@@ -22,10 +22,11 @@ layout: "site_wrapper"
         {% for project in site.categories['projects'] %}
             <div class="box">
                 <div>
-                    <a href="{{project.url}}">{{project.title}}</a>
+                    <a href="{{project.url}}">
+                        <img src="/assets/images/test_img.png" alt="{{project.title}}" class='image'>
+                    </a>
                 </div>
-                <img src="" alt="{{project.title}}">
-                <div></div>
+
             </div>
         {% endfor %}
         </div>
@@ -36,13 +37,21 @@ layout: "site_wrapper"
         </div>
     </section>
     
-    <section id='two'>About Me
+    <section id='about'>
+        <div class='sect-title'>About Me</div>
+        <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
         <div class='arrow-container'> <!-- Center this -->
             <i class="fas fa-angle-down fa-3x"></i>
         </div>
     </section>
 
-    <section id='three'>Experience
+    <section id='experience'>
+        <div class='sect-title'>Experience</div>
         <div class='arrow-container'> <!-- Center this -->
             <i class="fas fa-angle-down fa-3x"></i>
         </div>

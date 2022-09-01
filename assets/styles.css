@@ -5,7 +5,7 @@
     --navbarHoverColor: rgb(207, 207, 207);
     --showcaseColor: #0151cc;
     --boxColor: #0151cc;
-    --footerColor: #0151cc;
+    --footerColor: #3474e6;
 }
 
 *{
@@ -81,6 +81,10 @@ body{
 .header .container{
 }
 
+.sect-title{
+    font-size: 18px;
+}
+
 .showcase{
     background-color: var(--showcaseColor);
 }
@@ -91,9 +95,16 @@ body{
     flex-wrap: wrap;
 }
 
-.showcase .arrow-container{
+.arrow-container{
+    height: 7%;
     display: flex;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
 }
 
 .box{
@@ -107,11 +118,17 @@ body{
     height: 12rem;
 }
 
+section{
+    margin-top: 10px;
+}
+
 footer{
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 5%;
+    background-color: var(--footerColor);
 }
 
 footer hr{
@@ -125,7 +142,10 @@ footer hr{
 
     }
 
-    .boxes .container{
-
+    .showcase .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 }
